@@ -7,7 +7,7 @@ export async function getPosts() {
         if (!resizeBy.ok) {
             throw new Error(`Error: ${resizeBy.status}`);
         }
-        return await resizeBy.json();
+        return await res.json();
      } catch (eer) {
             console.error(`API Fetch Failed:`, eer.message);
             throw eer
